@@ -61,16 +61,7 @@ src/main/resources/application.properties.
 ```
 ./mvnw spring-boot:run
 ```
-
-## 📬 Contact
-Developed by Wirlly Pereira da Silva
-
-Uninter RU: 4645662
-
-E-mail: wirlly.silva@gmail.com
----
-
-## ✅ 2. Spring Initializr Setup
+## ✅ Spring Initializr Setup
 
 📦 Link generated with the correct dependencies:
 
@@ -85,7 +76,7 @@ Download the `.zip`, file, extract it, and import it into your IDE (IntelliJ or 
 
 ---
 
-## ✅ 3. UML Class Diagram (PlantUML code)
+## 🌱 UML Class Diagram (PlantUML code)
 
 ```plantuml
 @startuml TaskManagerAPI
@@ -122,4 +113,10 @@ TaskRepository --> Task
 TaskController --> TaskRepository
 
 @enduml
+```
+## 📬 Contact
+Developed by Wirlly Pereira da Silva
 
+Uninter RU: 4645662
+
+E-mail: wirlly.silva@gmail.com
