@@ -38,7 +38,7 @@ When testing, please make sure one of the tasks includes:
 
 ```json
 {
-  "name": "Wirlly Pereira da Silva - RU 4645662",
+  "name": "Wirlly Pereira da Silva",
   "dueDate": "2025-09-01",
   "responsible": "Wirlly Pereira da Silva"
 }
