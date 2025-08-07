@@ -64,7 +64,9 @@ src/main/resources/application.properties.
 
 ## 📬 Contact
 Developed by Wirlly Pereira da Silva
+
 Uninter RU: 4645662
+
 E-mail: wirlly.silva@gmail.com
 ---
 
