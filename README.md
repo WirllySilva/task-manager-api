@@ -65,24 +65,25 @@ src/main/resources/application.properties.
 ## 📬 Contact
 Developed by Wirlly Pereira da Silva
 Uninter RU: 4645662
+E-mail: wirlly.silva@gmail.com
 ---
 
 ## ✅ 2. Spring Initializr Setup
 
-📦 Link gerado com as dependências corretas:
+📦 Link generated with the correct dependencies:
 
-👉 [Abrir projeto no Spring Initializr](https://start.spring.io/#!type=maven-project&language=java&platformVersion=3.2.0&packaging=jar&jvmVersion=17&groupId=com.taskmanager&artifactId=task-manager-api&name=task-manager-api&description=Task%20Manager%20REST%20API&packageName=com.taskmanager&dependencies=web,data-jpa,mysql)
+👉 [Open project on Spring Initializr](https://start.spring.io/#!type=maven-project&language=java&platformVersion=3.5.4&packaging=jar&jvmVersion=17&groupId=com.taskmanager&artifactId=task-manager-api&name=task-manager-api&description=Task%20Manager%20REST%20API&packageName=com.taskmanager&dependencies=web,data-jpa,mysql)
 
-**Dependências incluídas:**
+**Included dependencies:**
 - Spring Web
 - Spring Data JPA
 - MySQL Driver
 
-Baixe o `.zip`, extraia e importe no IntelliJ ou VS Code com suporte a Spring Boot.
+Download the `.zip`, file, extract it, and import it into your IDE (IntelliJ or VS Code) with Spring Boot support.
 
 ---
 
-## ✅ 3. Diagrama de Classes UML (código PlantUML)
+## ✅ 3. UML Class Diagram (PlantUML code)
 
 ```plantuml
 @startuml TaskManagerAPI
