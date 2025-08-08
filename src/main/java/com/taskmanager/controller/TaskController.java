@@ -1,5 +1,6 @@
 package com.taskmanager.controller;
 
+import java.net.URI;
 import java.util.List;
 
 import org.springframework.http.ResponseEntity;
@@ -28,7 +29,8 @@ public class TaskController {
 	@PostMapping
 	public ResponseEntity<Task> creatTask(@RequestBody Task task) {
 		Task savedTask = taskService.createTask(task);
-		return ResponseEntity.ok(savedTask);
+		URI location = URI.create("/tasks/" + savedTask.getId());
+		return ResponseEntity.created(location).body(savedTask);
 	}
 	
 	@GetMapping
