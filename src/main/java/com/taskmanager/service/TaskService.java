@@ -29,13 +29,15 @@ public class TaskService {
 		return taskRepository.findById(id);
 	}
 	
-	public Optional<Task> updateTask(Long id, Task updatedTask) {
-		return taskRepository.findById(id).map(task -> {
-			task.setName(updatedTask.getName());
-			task.setDueDate(updatedTask.getDueDate());
-			task.setResponsible(updatedTask.getResponsible());
-			return taskRepository.save(task);
-		});
+	public Task updateTask(Long id, Task updatedTask) {
+	    return taskRepository.findById(id)
+	            .map(existingTask -> {
+	                existingTask.setName(updatedTask.getName());
+	                existingTask.setDueDate(updatedTask.getDueDate());
+	                existingTask.setResponsible(updatedTask.getResponsible());
+	                return taskRepository.save(existingTask);
+	            })
+	            .orElseThrow(() -> new RuntimeException("Task not found with id " + id));
 	}
 	
 	public boolean deleteTask(Long id) {

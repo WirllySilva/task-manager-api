@@ -17,7 +17,7 @@ import com.taskmanager.model.Task;
 import com.taskmanager.service.TaskService;
 
 @RestController
-@RequestMapping("/task")
+@RequestMapping("/tasks")
 public class TaskController {
 	
 	private final TaskService taskService;
@@ -38,7 +38,7 @@ public class TaskController {
 		return ResponseEntity.ok(taskService.getAllTasks());
 	}
 	
-	@PutMapping("/{id}")
+	@GetMapping("/{id}")
 	public ResponseEntity<Task> getTaskById(@PathVariable Long id) {
 		return taskService.getTaskById(id)
 				.map(ResponseEntity::ok)
@@ -51,6 +51,12 @@ public class TaskController {
 			return ResponseEntity.noContent().build();
 		}
 		return ResponseEntity.notFound().build();
+	}
+	
+	@PutMapping("/{id}")
+	public ResponseEntity<Task> updateTask(@PathVariable Long id, @RequestBody Task task) {
+	    Task updated = taskService.updateTask(id, task);
+	    return ResponseEntity.ok(updated);
 	}
 
 }
